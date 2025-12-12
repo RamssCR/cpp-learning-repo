@@ -2,17 +2,14 @@
 #include <vector>
 
 int main() {
-    std::vector numbers{1, 2, 3, 4, 5};
+    int x{5};
+    int y{10};
 
-    for (const auto& number : numbers) {
-        std::cout << number << std::endl;
-    }
+    int& r{x};
+    int* p{&x};
 
-    auto add = [](int a, int b) {
-        return a + b;
-    };
+    p = &y;
+    *p = 30;
 
-    std::cout << "My addition result is: " << add(3, 4) << std::endl;
-
-    return 0;
+    r = 30;
 }
