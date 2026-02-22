@@ -11,6 +11,7 @@ add_executable(
         src/library.cpp
         src/playlist.cpp
         src/active_player.cpp
+        src/file_manager.cpp
 )
 target_include_directories(MyFirstCppApp PUBLIC include)
 
